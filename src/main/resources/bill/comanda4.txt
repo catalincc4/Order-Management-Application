@@ -1,0 +1,9 @@
+*****************************************************
+     Id comanda: 4
+     Nume Client: Mihai
+     Adresa Client: Brasov
+     Produs: Telefon
+     Pret/produs: 1000
+     Cantitate: 1
+     Total: 1000
+*****************************************************

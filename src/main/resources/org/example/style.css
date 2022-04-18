@@ -1,0 +1,55 @@
+.anchorPane{
+    -fx-background-color: rgba(136, 123, 123, 0.66);
+}
+
+.text-field {
+    -fx-prompt-text-fill:black;
+    -fx-text-fill: #ff0000;
+    -fx-prompt-text-aligment: centre;
+    -fx-border-radius: 5;
+}
+
+.button{
+    -fx-text-fill: black;
+    -fx-color: #ce8459;
+    -fx-background-radius: 5;
+    -fx-border-color: #000000;
+    -fx-border-radius: 5;
+    -fx-border-width: 0;
+    -fx-border-insets: -0.5;
+}
+.icon{
+    -fx-fill:black;
+}
+.button:pressed {
+    -fx-translate-y: 4px;
+}
+.button:hover{
+    -fx-color: #a68181;
+}
+
+.editIcon{
+    -glyph-size:28px;
+    -fx-fill:green;
+}
+
+.editIcon:pressed{
+    -fx-translate-y: 3px;
+}
+
+.deleteIcon{
+    -fx-fill:red;
+    -glyph-size:28px;
+}
+
+.deleteIcon:pressed{
+    -fx-translate-y: 3px;
+}
+
+.textFieldError{
+    -fx-color: red;
+    -fx-border-width: 3px;
+}
+.backicon:pressed{
+    -fx-translate-y: 3px;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="anchorPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.presentation.ProductController">
+    <children>
+        <TextField fx:id="nameField" alignment="CENTER" blendMode="SCREEN" layoutX="35.0" layoutY="36.0" promptText="Nume">
+            <font>
+                <Font name="Times New Roman" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="priceField" alignment="CENTER" blendMode="SCREEN" layoutX="35.0" layoutY="73.0" promptText="Pret">
+            <font>
+                <Font name="Times New Roman" size="13.0" />
+            </font>
+        </TextField>
+        <Button fx:id="addButton" layoutX="35.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#addButton" prefHeight="31.0" prefWidth="164.0" text="Adauga">
+            <font>
+                <Font name="Times New Roman" size="13.0" />
+            </font>
+        </Button>
+        <TableView fx:id="productTable" layoutX="241.0" layoutY="3.0" prefHeight="400.0" prefWidth="363.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="productIDColumn" prefWidth="63.0" text="Produs ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="94.0" text="Nume" />
+                <TableColumn fx:id="priceColumn" prefWidth="76.0" text="Pret" />
+            <TableColumn fx:id="stockColumn" prefWidth="39.0" text="Stoc" />
+                <TableColumn fx:id="editColumn" minWidth="0.0" prefWidth="97.0" />
+            </columns>
+        </TableView>
+        <Button fx:id="saveButton" layoutX="35.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#saveButton" prefHeight="31.0" prefWidth="164.0" text="Salveaza">
+            <font>
+                <Font name="Times New Roman" size="13.0" />
+            </font>
+        </Button>
+      <TextField fx:id="stockField" alignment="CENTER" blendMode="SCREEN" layoutX="35.0" layoutY="111.0" promptText="Stoc">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIconView fx:id="cancelButton" glyphName="ARROW_CIRCLE_ALT_LEFT" layoutX="14.0" layoutY="388.0" onMouseClicked="#cancelButton" size="35" styleClass="backicon" text="" />
+    </children>
+</AnchorPane>

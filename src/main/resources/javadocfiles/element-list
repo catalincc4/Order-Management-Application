@@ -1,0 +1,7 @@
+module:org.example
+org.example
+org.example.businessLogic
+org.example.Connection
+org.example.dataAcces
+org.example.Model
+org.example.presentation

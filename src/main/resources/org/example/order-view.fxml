@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="anchorPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.presentation.OrderController">
+    <children>
+        <TextField fx:id="productIDField" alignment="CENTER" blendMode="SCREEN" layoutX="100.0" layoutY="115.0" prefHeight="30.0" prefWidth="200.0" promptText="Produs ID" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="925.0" AnchorPane.topAnchor="150.0">
+            <font>
+                <Font name="Times New Roman" size="16.0" />
+            </font>
+        </TextField>
+        <Button fx:id="addButton" layoutX="100.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#addButton" prefHeight="35.0" prefWidth="200.0" text="Adauga" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="925.0" AnchorPane.topAnchor="250.0">
+            <font>
+                <Font name="Times New Roman" size="21.0" />
+            </font>
+        </Button>
+        <TableView fx:id="productTable" layoutX="622.0" layoutY="-2.0" onMouseClicked="#getProductTableElement" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="775.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="productIDColumn" text="Produs ID" />
+                <TableColumn fx:id="nameProductColumn" prefWidth="114.0" text="Nume" />
+                <TableColumn fx:id="priceProductColumn" prefWidth="112.0" text="Pret" />
+                <TableColumn fx:id="stockColumn" minWidth="0.0" prefWidth="118.0" text="Stoc" />
+            </columns>
+        </TableView>
+        <Button fx:id="saveButton" layoutX="100.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#saveButton" prefHeight="35.0" prefWidth="200.0" text="Salveaza" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="925.0" AnchorPane.topAnchor="250.0">
+            <font>
+                <Font name="Times New Roman" size="21.0" />
+            </font>
+        </Button>
+      <TableView fx:id="clientTable" layoutX="219.0" layoutY="4.0" onMouseClicked="#getClientTableElement" prefHeight="393.0" prefWidth="381.0" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="clientIDColumn" prefWidth="87.0" text="Client ID" />
+            <TableColumn fx:id="nameClientColumn" prefWidth="187.0" text="Nume" />
+            <TableColumn fx:id="addressColumn" prefWidth="150.0" text="Adresa" />
+         </columns>
+      </TableView>
+      <TableView fx:id="orderTable" layoutX="394.0" layoutY="403.0" prefHeight="270.0" prefWidth="506.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="400.0">
+        <columns>
+          <TableColumn fx:id="orderIDColumn" prefWidth="111.0" text="Comanda ID" />
+          <TableColumn fx:id="clientIDOrderColumn" prefWidth="115.0" text="Client ID" />
+            <TableColumn fx:id="productIDOrderCoulmn" prefWidth="129.0" text="Produs ID" />
+            <TableColumn fx:id="purchaseDateCoulmn" prefWidth="127.0" text="Data achizitiei" />
+            <TableColumn fx:id="amountColumn" prefWidth="130.0" text="Cantitate" />
+            <TableColumn fx:id="totalCoulmn" prefWidth="110.0" text="Total" />
+            <TableColumn fx:id="editCol" prefWidth="127.0" />
+        </columns>
+      </TableView>
+      <TextField fx:id="amountField" alignment="CENTER" blendMode="SCREEN" layoutX="100.0" layoutY="161.0" prefHeight="30.0" prefWidth="200.0" promptText="Cantitate" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="925.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextField>
+      <Text fx:id="errorText" fill="RED" fontSmoothingType="LCD" layoutX="50.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="250.13671875">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView fx:id="cancelButton" glyphName="ARROW_CIRCLE_ALT_LEFT" layoutX="14.0" layoutY="779.0" onMouseClicked="#cancelButton" size="45" styleClass="backicon" />
+      <TextField fx:id="clientIDField" alignment="CENTER" blendMode="SCREEN" layoutX="75.0" layoutY="99.0" prefHeight="30.0" prefWidth="200.0" promptText="Client ID" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
