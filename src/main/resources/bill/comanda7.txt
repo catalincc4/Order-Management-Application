@@ -1,0 +1,9 @@
+*****************************************************
+     Id comanda: 7
+     Nume Client: Cosmin
+     Adresa Client: Satu Mare
+     Produs: Telefon
+     Pret/produs: 1000
+     Cantitate: 1
+     Total: 1000
+*****************************************************

@@ -1,0 +1,9 @@
+*****************************************************
+     Id comanda: 6
+     Nume Client: Florin
+     Adresa Client: Craiova
+     Produs: SmartWatch
+     Pret/produs: 200
+     Cantitate: 2
+     Total: 400
+*****************************************************
